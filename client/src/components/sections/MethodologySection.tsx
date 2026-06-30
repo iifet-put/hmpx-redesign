@@ -63,13 +63,13 @@ export default function MethodologySection() {
     <section
       ref={sectionRef}
       id="metodologia"
-      className="relative py-28 md:py-36 overflow-hidden"
+      className="relative py-28 md:py-36 overflow-hidden bg-gray-50/50"
     >
       {/* Red Line - horizontal connector */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#BA1414]/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#BA1414]/15 to-transparent" />
 
       {/* Background data fragment */}
-      <div className="absolute bottom-20 left-8 font-[family-name:var(--font-mono)] text-[10px] text-white/[0.03] hidden lg:block rotate-90 origin-bottom-left">
+      <div className="absolute bottom-20 left-8 font-[family-name:var(--font-mono)] text-[10px] text-gray-100 hidden lg:block rotate-90 origin-bottom-left">
         HMPX_METHODOLOGY_v4.2
       </div>
 
@@ -83,17 +83,17 @@ export default function MethodologySection() {
 
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 mb-16">
           <div className="lg:col-span-7">
-            <h2 className="method-reveal font-[family-name:var(--font-display)] font-black text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white mb-6">
+            <h2 className="method-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-gray-900 mb-6">
               Precisão que se mede em{" "}
-              <span className="text-white/30">reais recuperados.</span>
+              <span className="text-gray-300">reais recuperados.</span>
             </h2>
-            <p className="method-reveal text-lg text-white/45 max-w-xl">
+            <p className="method-reveal text-lg text-gray-500 max-w-xl">
               Cada etapa do nosso processo foi desenhada para eliminar incertezas
               e entregar resultados quantificáveis. Sem subjetividade.
             </p>
           </div>
           <div className="lg:col-span-5 flex items-end justify-end">
-            <div className="method-reveal font-[family-name:var(--font-mono)] text-[10px] text-white/20 text-right leading-loose hidden lg:block">
+            <div className="method-reveal font-[family-name:var(--font-mono)] text-[10px] text-gray-300 text-right leading-loose hidden lg:block">
               <div>input → análise → modelagem</div>
               <div>modelagem → validação → execução</div>
               <div>execução → monitoramento → loop</div>
@@ -101,34 +101,34 @@ export default function MethodologySection() {
           </div>
         </div>
 
-        {/* Steps - card grid instead of vertical list */}
+        {/* Steps - card grid */}
         <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
           {steps.map((step, i) => (
             <div
               key={i}
-              className="method-reveal group relative p-6 md:p-8 rounded-lg bg-white/[0.02] border border-white/5 hover:border-white/10 transition-all duration-500"
+              className="method-reveal group relative p-6 md:p-8 rounded-lg bg-white border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all duration-500"
             >
               {/* Step number */}
               <div className="flex items-center justify-between mb-5">
-                <span className="font-[family-name:var(--font-mono)] text-xs text-white/20">
+                <span className="font-[family-name:var(--font-mono)] text-xs text-gray-300">
                   {step.number}
                 </span>
                 <div className="font-[family-name:var(--font-mono)] text-right">
-                  <div className="text-lg font-bold text-white">{step.metric}</div>
-                  <div className="text-[10px] text-white/30">{step.metricLabel}</div>
+                  <div className="text-lg font-bold text-gray-900">{step.metric}</div>
+                  <div className="text-[10px] text-gray-400">{step.metricLabel}</div>
                 </div>
               </div>
 
-              <h3 className="font-[family-name:var(--font-display)] font-bold text-xl text-white mb-3">
+              <h3 className="font-[family-name:var(--font-display)] font-semibold text-xl text-gray-900 mb-3">
                 {step.title}
               </h3>
-              <p className="text-white/45 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed">
                 {step.description}
               </p>
 
               {/* Connection indicator */}
               {i < 3 && (
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-px h-6 bg-gradient-to-b from-white/10 to-transparent hidden sm:block" />
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-px h-6 bg-gradient-to-b from-gray-200 to-transparent hidden sm:block" />
               )}
             </div>
           ))}

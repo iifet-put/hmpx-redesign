@@ -55,7 +55,7 @@ export default function FAQSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 md:py-32 overflow-hidden"
+      className="relative py-24 md:py-32 overflow-hidden bg-white"
     >
       <div className="relative container max-w-4xl mx-auto px-4">
         <div className="faq-reveal flex items-center gap-3 mb-8">
@@ -65,22 +65,22 @@ export default function FAQSection() {
           </span>
         </div>
 
-        <h2 className="faq-reveal font-[family-name:var(--font-display)] font-black text-3xl md:text-4xl leading-[1.1] text-white mb-12">
+        <h2 className="faq-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl leading-[1.1] text-gray-900 mb-12">
           Respostas diretas.{" "}
-          <span className="text-white/40">Sem rodeios.</span>
+          <span className="text-gray-300">Sem rodeios.</span>
         </h2>
 
         <div className="space-y-3">
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="faq-reveal border border-white/5 rounded-lg overflow-hidden hover:border-white/10 transition-colors duration-300"
+              className="faq-reveal border border-gray-100 rounded-lg overflow-hidden hover:border-gray-200 transition-colors duration-300 bg-gray-50/50"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 className="w-full flex items-center justify-between p-5 md:p-6 text-left"
               >
-                <span className="font-[family-name:var(--font-display)] font-semibold text-white text-sm md:text-base pr-4">
+                <span className="font-[family-name:var(--font-display)] font-semibold text-gray-900 text-sm md:text-base pr-4">
                   {faq.question}
                 </span>
                 <svg
@@ -99,7 +99,7 @@ export default function FAQSection() {
                   openIndex === i ? "max-h-60" : "max-h-0"
                 }`}
               >
-                <p className="px-5 md:px-6 pb-5 md:pb-6 text-white/50 text-sm leading-relaxed">
+                <p className="px-5 md:px-6 pb-5 md:pb-6 text-gray-500 text-sm leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

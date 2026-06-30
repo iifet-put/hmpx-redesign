@@ -65,11 +65,11 @@ export default function SpecialtiesSection() {
     <section
       ref={sectionRef}
       id="especialidades"
-      className="relative py-28 md:py-36 overflow-hidden"
+      className="relative py-28 md:py-36 overflow-hidden bg-white"
     >
       {/* Background texture */}
-      <div className="absolute inset-0 bg-grid opacity-15" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      <div className="absolute inset-0 bg-grid opacity-30" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
 
       <div className="relative container max-w-6xl mx-auto px-4">
         <div className="spec-reveal flex items-center gap-3 mb-12">
@@ -81,41 +81,41 @@ export default function SpecialtiesSection() {
 
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 mb-16">
           <div className="lg:col-span-7">
-            <h2 className="spec-reveal font-[family-name:var(--font-display)] font-black text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white">
+            <h2 className="spec-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-gray-900">
               Cada área de atuação é uma{" "}
-              <span className="text-white/30">frente de resultado.</span>
+              <span className="text-gray-300">frente de resultado.</span>
             </h2>
           </div>
           <div className="lg:col-span-5 flex items-end">
-            <p className="spec-reveal text-white/40 text-sm leading-relaxed">
+            <p className="spec-reveal text-gray-500 text-sm leading-relaxed">
               Não oferecemos serviços genéricos. Cada especialidade foi construída
               para gerar impacto financeiro direto e mensurável.
             </p>
           </div>
         </div>
 
-        {/* Cards grid - with system codes */}
+        {/* Cards grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specialties.map((spec, i) => (
             <div
               key={i}
-              className="spec-reveal group relative p-6 rounded-lg bg-white/[0.02] border border-white/5 hover:border-white/10 transition-all duration-500"
+              className="spec-reveal group relative p-6 rounded-lg bg-gray-50 border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all duration-500"
             >
               {/* Code badge */}
               <div className="flex items-center justify-between mb-5">
-                <span className="font-[family-name:var(--font-mono)] text-[10px] tracking-wider text-white/20 bg-white/[0.03] px-2 py-1 rounded border border-white/5">
+                <span className="font-[family-name:var(--font-mono)] text-[10px] tracking-wider text-gray-400 bg-white px-2 py-1 rounded border border-gray-100">
                   {spec.code}
                 </span>
-                <svg className="w-3.5 h-3.5 text-white/10 group-hover:text-white/30 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-3.5 h-3.5 text-gray-200 group-hover:text-gray-400 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
                 </svg>
               </div>
 
-              <h3 className="font-[family-name:var(--font-display)] font-bold text-base text-white mb-3">
+              <h3 className="font-[family-name:var(--font-display)] font-semibold text-base text-gray-900 mb-3">
                 {spec.title}
               </h3>
 
-              <p className="text-white/40 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed">
                 {spec.description}
               </p>
             </div>

@@ -35,11 +35,11 @@ export default function TrustSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 md:py-28 overflow-hidden"
+      className="relative py-20 md:py-28 overflow-hidden bg-gray-50/50"
     >
       <div className="relative container max-w-6xl mx-auto px-4">
         <div className="trust-reveal text-center mb-12">
-          <p className="text-white/30 text-sm font-[family-name:var(--font-mono)] tracking-wider uppercase mb-8">
+          <p className="text-gray-400 text-sm font-[family-name:var(--font-mono)] tracking-wider uppercase mb-8">
             Setores que confiam na HMPX
           </p>
 
@@ -48,7 +48,7 @@ export default function TrustSection() {
             {logos.map((sector, i) => (
               <div
                 key={i}
-                className="px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.02] text-white/50 text-sm hover:border-[#BA1414]/30 hover:text-white/70 transition-all duration-300"
+                className="px-5 py-2.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm hover:border-[#BA1414]/30 hover:text-[#BA1414] transition-all duration-300"
               >
                 {sector}
               </div>
@@ -57,18 +57,18 @@ export default function TrustSection() {
         </div>
 
         {/* Testimonial */}
-        <div className="trust-reveal max-w-3xl mx-auto text-center mt-16 p-8 md:p-12 rounded-lg bg-white/[0.02] border border-white/5">
-          <svg className="w-8 h-8 text-[#BA1414]/40 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+        <div className="trust-reveal max-w-3xl mx-auto text-center mt-16 p-8 md:p-12 rounded-lg bg-white border border-gray-100 shadow-sm">
+          <svg className="w-8 h-8 text-[#BA1414]/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
           </svg>
-          <blockquote className="text-lg md:text-xl text-white/70 leading-relaxed mb-6 italic">
+          <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 italic">
             "A HMPX não nos entregou um relatório — entregou R$ 47 milhões que
             estavam invisíveis na nossa operação. Em 30 anos de empresa, nunca
             tivemos esse nível de inteligência fiscal."
           </blockquote>
           <div>
-            <div className="text-white font-semibold text-sm">Diretor Financeiro</div>
-            <div className="text-white/30 text-xs mt-1">Grupo Industrial — Setor Automotivo</div>
+            <div className="text-gray-900 font-semibold text-sm">Diretor Financeiro</div>
+            <div className="text-gray-400 text-xs mt-1">Grupo Industrial — Setor Automotivo</div>
           </div>
         </div>
       </div>

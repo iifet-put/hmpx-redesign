@@ -24,20 +24,20 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0A0A0A]/90 backdrop-blur-xl border-b border-white/5"
+          ? "bg-white/90 backdrop-blur-xl border-b border-gray-200/60 shadow-sm"
           : "bg-transparent"
       }`}
     >
       <nav className="container max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-4">
-        {/* Logo - Proprietary wordmark */}
+        {/* Logo - Official HMPX */}
         <a href="#" className="flex items-center gap-2.5 group">
           <img
-            src="/manus-storage/hmpx-logo-icon_6611e25d.png"
-            alt="HMPX"
-            className="w-7 h-7 md:w-8 md:h-8 transition-transform duration-300 group-hover:scale-110"
+            src="/manus-storage/Logo_HMPX_Padrao_Branca_088d59f4.png"
+            alt="HMPX Icon"
+            className="h-7 md:h-8 w-auto transition-transform duration-300 group-hover:scale-105"
           />
-          <span className="font-[family-name:var(--font-display)] font-black text-base md:text-lg tracking-[0.2em] text-white">
-            HMP<span className="text-[#BA1414]">X</span>
+          <span className="font-[family-name:var(--font-display)] font-bold text-lg tracking-[0.15em] text-gray-900">
+            HMPX
           </span>
         </a>
 
@@ -47,7 +47,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-medium tracking-wide"
+              className="text-[13px] text-gray-500 hover:text-[#BA1414] transition-colors duration-300 font-medium tracking-wide"
             >
               {link.label}
             </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contato"
-          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-semibold text-white bg-[#BA1414] hover:bg-[#D41818] rounded transition-all duration-300 hover:shadow-[0_0_20px_rgba(186,20,20,0.3)]"
+          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-semibold text-white bg-[#BA1414] hover:bg-[#D41818] rounded transition-all duration-300 hover:shadow-[0_4px_20px_rgba(186,20,20,0.25)]"
         >
           Diagnóstico Gratuito
         </a>
@@ -68,15 +68,15 @@ export default function Navbar() {
           className="md:hidden flex flex-col gap-1.5 p-2"
           aria-label="Menu"
         >
-          <span className={`w-5 h-0.5 bg-white transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`w-5 h-0.5 bg-white transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
-          <span className={`w-5 h-0.5 bg-white transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`w-5 h-0.5 bg-gray-800 transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`w-5 h-0.5 bg-gray-800 transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
+          <span className={`w-5 h-0.5 bg-gray-800 transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </nav>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-[#0A0A0A]/95 backdrop-blur-xl border-b border-white/5 transition-all duration-500 ${
+        className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-gray-200 transition-all duration-500 ${
           mobileOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
       >
@@ -86,7 +86,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="text-base text-white/60 hover:text-white transition-colors py-2"
+              className="text-base text-gray-600 hover:text-[#BA1414] transition-colors py-2"
             >
               {link.label}
             </a>

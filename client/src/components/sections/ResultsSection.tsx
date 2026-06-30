@@ -56,9 +56,9 @@ export default function ResultsSection() {
     <section
       ref={sectionRef}
       id="resultados"
-      className="relative py-28 md:py-36 overflow-hidden"
+      className="relative py-28 md:py-36 overflow-hidden bg-white"
     >
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
 
       <div className="relative container max-w-6xl mx-auto px-4">
         <div className="results-reveal flex items-center gap-3 mb-12">
@@ -70,13 +70,13 @@ export default function ResultsSection() {
 
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 mb-16">
           <div className="lg:col-span-7">
-            <h2 className="results-reveal font-[family-name:var(--font-display)] font-black text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white mb-6">
+            <h2 className="results-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-gray-900 mb-6">
               Números que falam por si.{" "}
-              <span className="text-white/30">Sem promessas. Sem asteriscos.</span>
+              <span className="text-gray-300">Sem promessas. Sem asteriscos.</span>
             </h2>
           </div>
           <div className="lg:col-span-5 flex items-end">
-            <p className="results-reveal text-white/45 text-sm leading-relaxed">
+            <p className="results-reveal text-gray-500 text-sm leading-relaxed">
               Cada resultado representa capital real recuperado ou economizado.
               Valores auditáveis e documentados.
             </p>
@@ -86,17 +86,17 @@ export default function ResultsSection() {
         {/* Big number - monumental */}
         <div className="results-reveal mb-16 relative">
           <div className="flex items-baseline gap-4">
-            <span className="font-[family-name:var(--font-mono)] text-6xl md:text-8xl lg:text-[8rem] font-bold text-white leading-none">
+            <span className="font-[family-name:var(--font-mono)] text-6xl md:text-8xl lg:text-[8rem] font-bold text-gray-900 leading-none">
               R$ 2,3
             </span>
             <span className="font-[family-name:var(--font-mono)] text-3xl md:text-5xl font-bold text-[#BA1414]">
               bi
             </span>
           </div>
-          <p className="text-white/30 text-sm mt-4 font-[family-name:var(--font-mono)]">
+          <p className="text-gray-400 text-sm mt-4 font-[family-name:var(--font-mono)]">
             Total recuperado e economizado — últimos 10 anos
           </p>
-          <div className="mt-6 w-full h-px bg-gradient-to-r from-[#BA1414]/30 via-white/5 to-transparent" />
+          <div className="mt-6 w-full h-px bg-gradient-to-r from-[#BA1414]/20 via-gray-100 to-transparent" />
         </div>
 
         {/* Case cards */}
@@ -104,23 +104,23 @@ export default function ResultsSection() {
           {results.map((result, i) => (
             <div
               key={i}
-              className="results-reveal group p-6 md:p-7 rounded-lg bg-white/[0.02] border border-white/5 hover:border-white/10 transition-all duration-500"
+              className="results-reveal group p-6 md:p-7 rounded-lg bg-gray-50 border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all duration-500"
             >
               <div className="flex items-center justify-between mb-4">
-                <span className="font-[family-name:var(--font-mono)] text-[10px] text-white/25 uppercase tracking-wider">
+                <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400 uppercase tracking-wider">
                   {result.sector}
                 </span>
-                <span className="font-[family-name:var(--font-mono)] text-[10px] text-white/20 px-2 py-0.5 rounded border border-white/5">
+                <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400 px-2 py-0.5 rounded border border-gray-200 bg-white">
                   {result.type}
                 </span>
               </div>
-              <div className="font-[family-name:var(--font-mono)] text-3xl md:text-4xl font-bold text-white mb-4">
+              <div className="font-[family-name:var(--font-mono)] text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 {result.value}
               </div>
-              <p className="text-white/40 text-sm leading-relaxed mb-4">
+              <p className="text-gray-500 text-sm leading-relaxed mb-4">
                 {result.description}
               </p>
-              <div className="flex items-center gap-2 text-[10px] text-white/25 font-[family-name:var(--font-mono)]">
+              <div className="flex items-center gap-2 text-[10px] text-gray-400 font-[family-name:var(--font-mono)]">
                 <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>

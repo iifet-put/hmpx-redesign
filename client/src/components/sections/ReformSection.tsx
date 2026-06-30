@@ -32,21 +32,10 @@ export default function ReformSection() {
     <section
       ref={sectionRef}
       id="reforma"
-      className="relative py-28 md:py-36 overflow-hidden"
+      className="relative py-28 md:py-36 overflow-hidden bg-gray-50/50"
     >
-      {/* Background image - subtle */}
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage: `url(/manus-storage/hmpx-reform_5a790e10.png)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] via-[#0A0A0A]/85 to-[#0A0A0A]" />
-
       {/* Red Line accent */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#BA1414]/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#BA1414]/15 to-transparent" />
 
       <div className="relative container max-w-6xl mx-auto px-4">
         <div className="reform-reveal flex items-center gap-3 mb-12">
@@ -56,13 +45,13 @@ export default function ReformSection() {
           </span>
         </div>
 
-        {/* Monumental headline */}
-        <h2 className="reform-reveal font-[family-name:var(--font-display)] font-black text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.05] text-white max-w-4xl mb-8">
+        {/* Headline */}
+        <h2 className="reform-reveal font-[family-name:var(--font-display)] font-bold text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.05] text-gray-900 max-w-4xl mb-8">
           A maior mudança tributária em 40 anos{" "}
-          <span className="text-white/30">já começou.</span>
+          <span className="text-gray-300">já começou.</span>
         </h2>
 
-        <p className="reform-reveal text-lg text-white/45 max-w-2xl mb-16">
+        <p className="reform-reveal text-lg text-gray-500 max-w-2xl mb-16">
           A Reforma Tributária não é um evento futuro — é um processo em
           andamento que já está redefinindo regras. Empresas que se
           prepararem agora terão vantagem competitiva irreversível.
@@ -78,31 +67,31 @@ export default function ReformSection() {
           ].map((item, i) => (
             <div
               key={i}
-              className="relative p-5 rounded-lg bg-white/[0.02] border border-white/5 group hover:border-white/10 transition-all duration-300"
+              className="relative p-5 rounded-lg bg-white border border-gray-100 group hover:border-gray-200 hover:shadow-sm transition-all duration-300"
             >
-              <div className="font-[family-name:var(--font-mono)] text-lg font-bold text-white mb-2">
+              <div className="font-[family-name:var(--font-mono)] text-lg font-bold text-gray-900 mb-2">
                 {item.year}
               </div>
-              <h4 className="font-[family-name:var(--font-display)] font-semibold text-sm text-white/80 mb-1">
+              <h4 className="font-[family-name:var(--font-display)] font-semibold text-sm text-gray-700 mb-1">
                 {item.event}
               </h4>
-              <p className="text-white/35 text-xs leading-relaxed">
+              <p className="text-gray-400 text-xs leading-relaxed">
                 {item.desc}
               </p>
               {/* Connection line between cards */}
               {i < 3 && (
-                <div className="absolute top-1/2 -right-2 w-4 h-px bg-white/10 hidden md:block" />
+                <div className="absolute top-1/2 -right-2 w-4 h-px bg-gray-200 hidden md:block" />
               )}
             </div>
           ))}
         </div>
 
         {/* Alert box */}
-        <div className="reform-reveal p-6 md:p-8 rounded-lg border border-[#BA1414]/20 bg-[#BA1414]/[0.03]">
+        <div className="reform-reveal p-6 md:p-8 rounded-lg border border-[#BA1414]/20 bg-[#BA1414]/[0.02]">
           <div className="flex items-start gap-4">
             <div className="w-2 h-2 rounded-full bg-[#BA1414] mt-2 shrink-0 animate-pulse" />
             <div>
-              <p className="text-white/70 text-sm leading-relaxed mb-4">
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 O período de transição (2026-2033) é a janela de oportunidade.
                 Quem mapear cenários agora poderá otimizar sua estrutura antes
                 que as novas regras se consolidem. Inércia custará caro.
