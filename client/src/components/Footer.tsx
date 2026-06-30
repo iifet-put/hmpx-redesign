@@ -7,8 +7,8 @@ export default function Footer() {
           <div className="md:col-span-5">
             <img
               src="/manus-storage/Logo_HMPX_Padrao_Branca_1dc533dd.webp"
-              alt="HMPX"
-              className="h-8 w-auto mb-6"
+              alt="HMPX - Inteligência Fiscal e Tributária"
+              className="h-9 w-auto mb-6"
             />
             <p className="text-white/50 text-sm leading-relaxed max-w-sm mb-6">
               Inteligência Fiscal e Tributária. Transformamos complexidade
