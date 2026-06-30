@@ -1,25 +1,31 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/sections/HeroSection";
+import ProblemSection from "@/components/sections/ProblemSection";
+import SolutionSection from "@/components/sections/SolutionSection";
+import MethodologySection from "@/components/sections/MethodologySection";
+import SpecialtiesSection from "@/components/sections/SpecialtiesSection";
+import ReformSection from "@/components/sections/ReformSection";
+import ResultsSection from "@/components/sections/ResultsSection";
+import TrustSection from "@/components/sections/TrustSection";
+import FAQSection from "@/components/sections/FAQSection";
+import CTASection from "@/components/sections/CTASection";
+import Footer from "@/components/Footer";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen bg-[#0A0A0A] text-white overflow-x-hidden">
+      <Navbar />
+      <HeroSection />
+      <ProblemSection />
+      <SolutionSection />
+      <MethodologySection />
+      <SpecialtiesSection />
+      <ReformSection />
+      <ResultsSection />
+      <TrustSection />
+      <FAQSection />
+      <CTASection />
+      <Footer />
     </div>
   );
 }
