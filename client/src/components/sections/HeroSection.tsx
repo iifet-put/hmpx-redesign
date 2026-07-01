@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+﻿import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 export default function HeroSection() {
@@ -92,7 +92,7 @@ export default function HeroSection() {
                 <div className="text-xs text-gray-400 mt-1">Anos de expertise</div>
               </div>
               <div>
-                <div className="font-[family-name:var(--font-mono)] text-2xl font-bold text-[#BA1414]">R$ 2,3 bi</div>
+                <div className="font-[family-name:var(--font-mono)] text-2xl font-bold text-[#BA1414]">R$ 1,2 bi</div>
                 <div className="text-xs text-gray-400 mt-1">Recuperados</div>
               </div>
               <div>
@@ -109,61 +109,94 @@ export default function HeroSection() {
               <div className="space-y-4">
                 {/* Module 1 */}
                 <div className="p-5 rounded-lg bg-gray-50 border border-gray-100">
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center justify-between mb-4">
                     <span className="font-[family-name:var(--font-mono)] text-[10px] tracking-wider uppercase text-gray-400">
-                      Diagnóstico Fiscal
+                      Cenário empresarial no Brasil
                     </span>
                     <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                   </div>
-                  <div className="flex items-end gap-2">
-                    <span className="font-[family-name:var(--font-mono)] text-3xl font-bold text-gray-900">47</span>
-                    <span className="text-xs text-gray-400 pb-1">oportunidades identificadas</span>
+                  <div className="flex items-baseline gap-3">
+                    <span className="shrink-0 whitespace-nowrap font-[family-name:var(--font-mono)] text-xl font-bold leading-none text-gray-900">
+                      6 em cada 10
+                    </span>
+                    <span className="whitespace-nowrap text-[11px] text-gray-400">
+                      empresas abertas encerram atividades em até 5 anos
+                    </span>
                   </div>
+                  <p className="mt-3 text-xs text-gray-400">
+                    Taxa de sobrevivência em 5 anos: 39,8%
+                  </p>
                   <div className="mt-3 h-1 bg-gray-200 rounded-full overflow-hidden">
-                    <div className="h-full w-[73%] bg-gradient-to-r from-[#BA1414] to-[#BA1414]/50 rounded-full" />
+                    <div className="h-full w-[62.5%] bg-gradient-to-r from-[#BA1414] to-[#BA1414]/50 rounded-full" />
                   </div>
                 </div>
 
                 {/* Module 2 */}
                 <div className="p-5 rounded-lg bg-gray-50 border border-gray-100">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="font-[family-name:var(--font-mono)] text-[10px] tracking-wider uppercase text-gray-400">
-                      Economia Projetada
-                    </span>
-                    <span className="font-[family-name:var(--font-mono)] text-[10px] text-green-600">+12.4%</span>
+                  <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-6">
+                    <div>
+                      <div className="mb-4 font-[family-name:var(--font-mono)] text-[10px] tracking-wider uppercase text-gray-400">
+                        Complexidade tributária
+                      </div>
+                      <div className="whitespace-nowrap font-[family-name:var(--font-mono)] text-3xl font-bold leading-none text-gray-900">
+                        1.501 h/ano
+                      </div>
+                      <div className="mt-3 whitespace-nowrap text-xs text-gray-400">
+                        tempo gasto para preparar, declarar e pagar tributos no Brasil
+                      </div>
+                    </div>
+                    <div className="text-center">
+                      <div className="font-[family-name:var(--font-mono)] text-2xl font-bold leading-none text-green-600">
+                        65,1%
+                      </div>
+                      <div className="mt-2 text-xs leading-relaxed text-gray-500">
+                        <span className="block">do lucro em tributos</span>
+                        <span className="block">e contribuições*</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="font-[family-name:var(--font-mono)] text-2xl font-bold text-gray-900">
-                    R$ 23.4M
-                  </div>
-                  <div className="text-xs text-gray-400 mt-1">Potencial anual estimado</div>
                 </div>
 
                 {/* Module 3 */}
                 <div className="p-5 rounded-lg bg-gray-50 border border-gray-100">
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center justify-between mb-4">
                     <span className="font-[family-name:var(--font-mono)] text-[10px] tracking-wider uppercase text-gray-400">
-                      Monitoramento
+                      Indicadores de pressão
                     </span>
-                    <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400">Tempo real</span>
+                    <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400">Referência Brasil</span>
                   </div>
                   <div className="space-y-2">
-                    {["PIS/COFINS", "ICMS-ST", "IPI"].map((tax, i) => (
-                      <div key={i} className="flex items-center justify-between">
-                        <span className="font-[family-name:var(--font-mono)] text-xs text-gray-600">{tax}</span>
-                        <div className="flex items-center gap-2">
-                          <div className="w-16 h-1 bg-gray-200 rounded-full overflow-hidden">
-                            <div
-                              className="h-full bg-gray-400 rounded-full"
-                              style={{ width: `${60 + i * 15}%` }}
-                            />
-                          </div>
-                          <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400">
-                            {["Alerta", "Otimizado", "Em análise"][i]}
-                          </span>
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="text-xs text-gray-600">Sobrevivência em 5 anos</span>
+                      <div className="grid grid-cols-[4rem_6.5rem] items-center gap-3">
+                        <div className="h-1 overflow-hidden rounded-full bg-gray-200">
+                          <div className="h-full w-[39.8%] rounded-full bg-gray-400" />
                         </div>
+                        <span className="font-[family-name:var(--font-mono)] text-xs text-gray-500">39,8% ativas</span>
                       </div>
-                    ))}
+                    </div>
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="text-xs text-gray-600">Tempo para cumprir tributos</span>
+                      <div className="grid grid-cols-[4rem_6.5rem] items-center gap-3">
+                        <div className="h-1 overflow-hidden rounded-full bg-gray-200">
+                          <div className="h-full w-[47%] rounded-full bg-gray-400" />
+                        </div>
+                        <span className="font-[family-name:var(--font-mono)] text-xs text-gray-500">1.501 horas</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="text-xs text-gray-600">Carga sobre o lucro*</span>
+                      <div className="grid grid-cols-[4rem_6.5rem] items-center gap-3">
+                        <div className="h-1 overflow-hidden rounded-full bg-gray-200">
+                          <div className="h-full w-[65.1%] rounded-full bg-gray-400" />
+                        </div>
+                        <span className="font-[family-name:var(--font-mono)] text-xs text-gray-500">65,1%</span>
+                      </div>
+                    </div>
                   </div>
+                  <p className="mt-4 text-[10px] leading-relaxed text-gray-400">
+                    Fontes: IBGE e World Bank Doing Business 2020. *Indicador de empresa padrão do relatório.
+                  </p>
                 </div>
               </div>
 

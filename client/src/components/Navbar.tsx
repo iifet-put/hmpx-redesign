@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Problema", href: "#problema" },
+  { label: "Cenário", href: "#cenario" },
   { label: "Metodologia", href: "#metodologia" },
   { label: "Especialidades", href: "#especialidades" },
   { label: "Reforma", href: "#reforma" },
   { label: "Resultados", href: "#resultados" },
+  { label: "Calculadora", href: "https://calculadora.hmpx.com.br/" },
 ];
 
 export default function Navbar() {
