@@ -6,6 +6,7 @@ const navLinks = [
   { label: "Especialidades", href: "#especialidades" },
   { label: "Reforma", href: "#reforma" },
   { label: "Resultados", href: "#resultados" },
+  { label: "Conteúdos", href: "#conteudos" },
 ];
 
 export default function Navbar() {

@@ -35,6 +35,7 @@ export default function Footer() {
                 { label: "Especialidades", href: "#especialidades" },
                 { label: "Reforma Tributária", href: "#reforma" },
                 { label: "Resultados", href: "#resultados" },
+                { label: "Eventos & Conteúdos", href: "#conteudos" },
                 { label: "Contato", href: "#contato" },
               ].map((link) => (
                 <a

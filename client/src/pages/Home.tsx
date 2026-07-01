@@ -7,6 +7,7 @@ import SpecialtiesSection from "@/components/sections/SpecialtiesSection";
 import ReformSection from "@/components/sections/ReformSection";
 import ResultsSection from "@/components/sections/ResultsSection";
 import TrustSection from "@/components/sections/TrustSection";
+import ContentSection from "@/components/sections/ContentSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/Footer";
@@ -23,6 +24,7 @@ export default function Home() {
       <ReformSection />
       <ResultsSection />
       <TrustSection />
+      <ContentSection />
       <FAQSection />
       <CTASection />
       <Footer />
