@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-5">
             <img
-              src="/manus-storage/Logo_HMPX_Padrao_Branca_1dc533dd.webp"
+              src="/images/Logo_HMPX_Padrao.webp"
               alt="HMPX - Inteligência Fiscal e Tributária"
               className="h-9 w-auto mb-6"
             />

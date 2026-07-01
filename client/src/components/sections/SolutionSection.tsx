@@ -83,7 +83,7 @@ export default function SolutionSection() {
             <div className="relative">
               <div className="rounded-lg overflow-hidden border border-gray-100 shadow-sm">
                 <img
-                  src="/manus-storage/hmpx-methodology_f912f904.png"
+                  src="/images/hmpx-methodology.webp"
                   alt="Sistema de inteligência HMPX"
                   className="w-full h-auto"
                 />

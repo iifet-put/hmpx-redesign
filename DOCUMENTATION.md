@@ -141,18 +141,6 @@ A Navbar alterna para menu hamburger em mobile com animação de transição.
 
 ---
 
-## Assets Visuais
-
-| Asset | Uso | Path |
-|---|---|---|
-| Hero BG | Background do hero | `/manus-storage/hmpx-hero-bg_0663a553.png` |
-| Logo Icon | Navbar e Footer | `/manus-storage/hmpx-logo-icon_6611e25d.png` |
-| Methodology | Seção Solução | `/manus-storage/hmpx-methodology_f912f904.png` |
-| Reform | Background Reforma | `/manus-storage/hmpx-reform_5a790e10.png` |
-| Data Pattern | Decorativo | `/manus-storage/hmpx-data-pattern_8e0b2c1a.png` |
-
----
-
 ## Como Executar
 
 ```bash

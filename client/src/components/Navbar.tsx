@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Logo - Official HMPX */}
         <a href="#" className="flex items-center gap-2.5 group">
           <img
-            src="/manus-storage/Logo_HMPX_Padrao_66970a41.webp"
+            src="/images/Logo_HMPX_Padrao.webp"
             alt="HMPX - Inteligência Fiscal e Tributária"
             className="h-9 md:h-10 w-auto transition-transform duration-300 group-hover:scale-105"
           />
