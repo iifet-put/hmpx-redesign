@@ -1,5 +1,6 @@
 ﻿import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { DialogTrigger } from "@/components/ui/dialog";
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -65,15 +66,17 @@ export default function HeroSection() {
             </p>
 
             <div ref={ctaRef} className="flex flex-col sm:flex-row items-start gap-4 mb-12">
-              <a
-                href="#contato"
+              <DialogTrigger asChild>
+                <button
+                  type="button"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white bg-[#BA1414] hover:bg-[#D41818] rounded transition-all duration-300 hover:shadow-[0_4px_20px_rgba(186,20,20,0.3)] active:scale-[0.97]"
-              >
+                >
                 Descubra suas oportunidades ocultas
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </a>
+                </button>
+              </DialogTrigger>
               <a
                 href="#metodologia"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-medium text-gray-600 hover:text-gray-900 border border-gray-200 hover:border-gray-300 rounded transition-all duration-300"

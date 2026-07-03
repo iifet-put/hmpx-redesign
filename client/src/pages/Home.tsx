@@ -11,23 +11,26 @@ import ContentSection from "@/components/sections/ContentSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/Footer";
+import DiagnosticModal from "@/components/DiagnosticModal";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-[#1a1a1a] overflow-x-hidden">
-      <Navbar />
-      <HeroSection />
-      <ProblemSection />
-      <SolutionSection />
-      <MethodologySection />
-      <SpecialtiesSection />
-      <ReformSection />
-      <ResultsSection />
-      {/* <TrustSection /> */}
-      <ContentSection />
-      <FAQSection />
-      <CTASection />
-      <Footer />
-    </div>
+    <DiagnosticModal>
+      <div className="min-h-screen bg-white text-[#1a1a1a] overflow-x-hidden">
+        <Navbar />
+        <HeroSection />
+        <ProblemSection />
+        <SolutionSection />
+        <MethodologySection />
+        <SpecialtiesSection />
+        <ReformSection />
+        <ResultsSection />
+        {/* <TrustSection /> */}
+        <ContentSection />
+        <FAQSection />
+        <CTASection />
+        <Footer />
+      </div>
+    </DiagnosticModal>
   );
 }

@@ -6,4 +6,5 @@ export type DemoPost = {
   height?: number; // Número de linhas que o card ocupa. Se não definido, usa o padrão do bento grid.
   width?: number; // Número de colunas que o card ocupa. Se não definido, usa o padrão do bento grid.
   image?: string; // URL da imagem de fundo do card (ex.: "/images/demo-post-1.webp")
+  url?: string; // URL do card (ex.: "/insights/cbs-ibs-o-que-muda-no-seu-fluxo-de-caixa-a-partir-de-2026")
 };

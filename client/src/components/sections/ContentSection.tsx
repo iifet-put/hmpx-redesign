@@ -168,7 +168,7 @@ function PostCard({ post, index }: { post: DemoPost; index: number }) {
 
   return (
     <a
-      href={INSTAGRAM_URL}
+      href={post.url || INSTAGRAM_URL}
       target="_blank"
       rel="noopener noreferrer"
       className={`group relative overflow-hidden rounded-xl md:rounded-2xl border border-white/[0.06] bg-white/[0.02] transition-all duration-500 hover:border-[#BA1414]/40 hover:-translate-y-1 hover:shadow-[0_16px_48px_-12px_rgba(186,20,20,0.25)] ${featuredClasses} ${
