@@ -45,7 +45,7 @@ export const DEMO_POSTS: DemoPost[] = [
     meta: "Como ficará a Reforma Tributária na Tecnologia?",
     width: 2,
     image: "/images/Evento-TrackHub.webp",
-    url: "https://www.instagram.com/reel/DWpD8hZCeYF/?igsh=MWplYWI2cWg3M3d2eg=="
+    url: "https://www.instagram.com/reel/DZvtckgpnmI/?igsh=MTE4aWMxbHhrcGhwZA=="
   },
   {
     category: "Evento",
