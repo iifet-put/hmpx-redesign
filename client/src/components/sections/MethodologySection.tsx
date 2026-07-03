@@ -93,11 +93,6 @@ export default function MethodologySection() {
             </p>
           </div>
           <div className="lg:col-span-5 flex items-end justify-end">
-            <div className="method-reveal font-[family-name:var(--font-mono)] text-[10px] text-[#BA1414] text-right leading-loose hidden lg:block">
-              <div>input → análise → modelagem</div>
-              <div>modelagem → validação → execução</div>
-              <div>execução → monitoramento → loop</div>
-            </div>
           </div>
         </div>
 

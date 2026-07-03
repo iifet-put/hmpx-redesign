@@ -50,7 +50,7 @@ export default function SolutionSection() {
             <h2 className="solution-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-gray-900 mb-8">
               Não somos uma consultoria.
               <br />
-              <span className="text-[#BA1414]">Somos um sistema de inteligência.</span>
+              <span className="text-[#BA1414]">Somos um hub de inteligência.</span>
             </h2>
 
             <p className="solution-reveal text-lg text-gray-500 leading-relaxed mb-10 max-w-xl">
@@ -69,10 +69,10 @@ export default function SolutionSection() {
                 { code: "PLAN", label: "Estratégia fiscal integrada ao planejamento financeiro" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4 group">
-                  <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400 bg-gray-50 px-2 py-1 rounded border border-gray-100 shrink-0 mt-0.5">
-                    {item.code}
+                  <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400 rounded border border-gray-100 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BA1414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                   </span>
-                  <span className="text-gray-600 text-sm">{item.label}</span>
+                  <span className="text-gray-600 text-sm mt-0.5">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -81,16 +81,16 @@ export default function SolutionSection() {
           {/* Right: Visual (5 cols) */}
           <div className="solution-reveal lg:col-span-5">
             <div className="relative">
-              <div className="rounded-lg overflow-hidden border border-gray-100 shadow-sm">
+              <div className="relative z-0 rounded-lg overflow-hidden border border-gray-100 shadow-sm">
                 <img
                   src="/images/hmpx-methodology.webp"
                   alt="Sistema de inteligência HMPX"
-                  className="w-full h-auto"
+                  className="relative z-0 w-full h-auto"
                 />
               </div>
 
               {/* Floating stat module */}
-              <div className="absolute -bottom-4 -left-4 p-4 shadow-lg border border-gray-100 rounded-lg">
+              <div className="bg-white absolute z-10 -bottom-4 -left-4 p-4 shadow-lg border border-gray-100 rounded-lg">
                 <div className="flex items-center gap-2 mb-1">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#BA1414]" />
                   <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400">Economia identificada</span>
@@ -101,7 +101,7 @@ export default function SolutionSection() {
               </div>
 
               {/* System status indicator */}
-              <div className="absolute -top-3 -right-3 p-3 shadow-lg border border-gray-100 rounded-lg">
+              <div className="bg-white absolute z-10 -top-3 -right-3 p-3 shadow-lg border border-gray-100 rounded-lg">
                 <div className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                   <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400">Online</span>
