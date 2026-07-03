@@ -85,7 +85,7 @@ export default function ProblemSection() {
               <div className="font-[family-name:var(--font-mono)] text-3xl font-bold text-gray-900 mb-2">R$ 5,6 tri</div>
               <div className="text-xs text-gray-400 uppercase tracking-wider mb-3">em litígios ativos</div>
               <p className="text-gray-500 text-sm leading-relaxed">
-                O contencioso tributário brasileiro supera R$ 4,7 trilhões. Parte desse valor pode estar no seu balanço.
+                O contencioso tributário brasileiro supera R$ 5,6 trilhões. Parte desse valor pode estar no seu balanço.
               </p>
             </div>
 
