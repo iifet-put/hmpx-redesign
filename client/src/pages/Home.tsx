@@ -6,7 +6,7 @@ import MethodologySection from "@/components/sections/MethodologySection";
 import SpecialtiesSection from "@/components/sections/SpecialtiesSection";
 import ReformSection from "@/components/sections/ReformSection";
 import ResultsSection from "@/components/sections/ResultsSection";
-import TrustSection from "@/components/sections/TrustSection";
+// import TrustSection from "@/components/sections/TrustSection";
 import ContentSection from "@/components/sections/ContentSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
@@ -23,9 +23,8 @@ export default function Home() {
       <SpecialtiesSection />
       <ReformSection />
       <ResultsSection />
-      <TrustSection />
+      {/* <TrustSection /> */}
       <ContentSection />
-      {/* <TrustSection />  */}
       <FAQSection />
       <CTASection />
       <Footer />

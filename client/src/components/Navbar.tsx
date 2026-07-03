@@ -1,4 +1,12 @@
 import { useState, useEffect } from "react";
+import CTASection from "@/components/sections/CTASection";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const navLinks = [
   { label: "Cenário", href: "#cenario" },
@@ -23,13 +31,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-white/90 backdrop-blur-xl border-b border-gray-200/60 shadow-sm"
-          : "bg-transparent"
-      }`}
-    >
+    <Dialog>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled
+            ? "bg-white/90 backdrop-blur-xl border-b border-gray-200/60 shadow-sm"
+            : "bg-transparent"
+        }`}
+      >
       <nav className="container max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-4">
         {/* Logo - Official HMPX */}
         <a href="#" className="flex items-center gap-2.5 group">
@@ -54,12 +63,14 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <a
-          href="#contato"
-          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-semibold text-white bg-[#BA1414] hover:bg-[#D41818] rounded transition-all duration-300 hover:shadow-[0_4px_20px_rgba(186,20,20,0.25)]"
-        >
-          Diagnóstico Gratuito
-        </a>
+        <DialogTrigger asChild>
+          <button
+            type="button"
+            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-semibold text-white bg-[#BA1414] hover:bg-[#D41818] rounded transition-all duration-300 hover:shadow-[0_4px_20px_rgba(186,20,20,0.25)]"
+          >
+            Diagnóstico Gratuito
+          </button>
+        </DialogTrigger>
 
         {/* Mobile Toggle */}
         <button
@@ -90,15 +101,26 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contato"
-            onClick={() => setMobileOpen(false)}
-            className="mt-4 inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-white bg-[#BA1414] rounded"
-          >
-            Diagnóstico Gratuito
-          </a>
+          <DialogTrigger asChild>
+            <button
+              type="button"
+              onClick={() => setMobileOpen(false)}
+              className="mt-4 inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-white bg-[#BA1414] rounded"
+            >
+              Diagnóstico Gratuito
+            </button>
+          </DialogTrigger>
         </div>
       </div>
-    </header>
+      </header>
+
+      <DialogContent className="max-h-[calc(100vh-1rem)] w-[calc(100%-1rem)] gap-0 overflow-y-auto p-0 sm:max-w-6xl">
+        <DialogTitle className="sr-only">Diagnóstico Gratuito</DialogTitle>
+        <DialogDescription className="sr-only">
+          Solicite um diagnóstico estratégico gratuito para sua empresa.
+        </DialogDescription>
+        <CTASection embedded />
+      </DialogContent>
+    </Dialog>
   );
 }

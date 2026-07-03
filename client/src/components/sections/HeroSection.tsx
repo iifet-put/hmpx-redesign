@@ -105,6 +105,20 @@ export default function HeroSection() {
           {/* Right: Data fragments (5 cols) - intelligence interface */}
           <div ref={dataRef} className="lg:col-span-5 hidden lg:block">
             <div className="relative">
+              {/* backgroun color #1F6F6B */}
+              <div className="mb-4 flex justify-center">
+                <iframe
+                  id="impostometro"
+                  title="Impostômetro"
+                  src="https://impostometro.com.br/widget/contador/"
+                  width="480"
+                  height="90"
+                  scrolling="no"
+                  frameBorder="0"
+                  className="block max-w-full"
+                />
+              </div>
+
               {/* Floating data modules */}
               <div className="space-y-4">
                 {/* Module 1 */}
