@@ -92,7 +92,7 @@ export default function ReformSection() {
             <div className="w-2 h-2 rounded-full bg-[#BA1414] mt-2 shrink-0 animate-pulse" />
             <div>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                O período de transição (2026-2033) é a janela de oportunidade.
+                O período de transição (2026-2032) é a janela de oportunidade.
                 Quem mapear cenários agora poderá otimizar sua estrutura antes
                 que as novas regras se consolidem. Inércia custará caro.
               </p>

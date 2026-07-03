@@ -25,6 +25,7 @@ export default function Home() {
       <ResultsSection />
       <TrustSection />
       <ContentSection />
+      {/* <TrustSection />  */}
       <FAQSection />
       <CTASection />
       <Footer />

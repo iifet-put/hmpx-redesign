@@ -6,25 +6,39 @@ gsap.registerPlugin(ScrollTrigger);
 
 const results = [
   {
-    sector: "Indústria Automotiva",
-    value: "R$ 47M",
+    sector: "Setor Automotivo",
+    value: "R$ 247M",
     description: "Créditos de PIS/COFINS recuperados em operação de revisão fiscal completa.",
     timeline: "8 meses",
     type: "Recuperação",
   },
   {
     sector: "Varejo Nacional",
-    value: "R$ 23M",
+    value: "R$ 183M",
     description: "Economia anual gerada por reestruturação de planejamento tributário interestadual.",
     timeline: "12 meses",
     type: "Planejamento",
   },
   {
     sector: "Agronegócio",
-    value: "R$ 89M",
+    value: "R$ 289M",
     description: "Recuperação de tributos pagos indevidamente nos últimos 5 anos via compensação administrativa.",
     timeline: "14 meses",
     type: "Compensação",
+  },
+  {
+    sector: "Indústria",
+    value: "R$ 221M",
+    description: "Revisão tributária com identificação e recuperação de créditos acumulados em operações industriais.",
+    timeline: "10 meses",
+    type: "Recuperação",
+  },
+  {
+    sector: "Atacado",
+    value: "R$ 260M",
+    description: "Redução de carga tributária por reorganização fiscal e planejamento estratégico de operações.",
+    timeline: "11 meses",
+    type: "Planejamento",
   },
 ];
 
@@ -87,14 +101,14 @@ export default function ResultsSection() {
         <div className="results-reveal mb-16 relative">
           <div className="flex items-baseline gap-4">
             <span className="font-[family-name:var(--font-mono)] text-6xl md:text-8xl lg:text-[8rem] font-bold text-gray-900 leading-none">
-              R$ 2,3
+              R$ 1,2
             </span>
             <span className="font-[family-name:var(--font-mono)] text-3xl md:text-5xl font-bold text-[#BA1414]">
               bi
             </span>
           </div>
           <p className="text-gray-400 text-sm mt-4 font-[family-name:var(--font-mono)]">
-            Total recuperado e economizado — últimos 10 anos
+            Total recuperado e economizado
           </p>
           <div className="mt-6 w-full h-px bg-gradient-to-r from-[#BA1414]/20 via-gray-100 to-transparent" />
         </div>

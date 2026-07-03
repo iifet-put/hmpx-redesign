@@ -31,7 +31,7 @@ export default function ProblemSection() {
   return (
     <section
       ref={sectionRef}
-      id="problema"
+      id="cenario"
       className="relative py-28 md:py-36 overflow-hidden bg-white"
     >
       {/* Background data fragments */}
@@ -48,7 +48,7 @@ export default function ProblemSection() {
         <div className="problem-reveal flex items-center gap-3 mb-12">
           <div className="w-8 h-px bg-[#BA1414]" />
           <span className="font-[family-name:var(--font-mono)] text-xs tracking-[0.2em] uppercase text-[#BA1414]">
-            O Problema
+            O Cenário
           </span>
         </div>
 
@@ -62,8 +62,8 @@ export default function ProblemSection() {
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 mb-20">
           {/* Left - Big number */}
           <div className="problem-reveal lg:col-span-4 flex flex-col justify-center">
-            <div className="font-[family-name:var(--font-mono)] text-7xl md:text-8xl lg:text-9xl font-bold text-gray-100 leading-none">
-              97
+            <div className="font-[family-name:var(--font-mono)] text-7xl md:text-8xl lg:text-8xl font-bold text-gray-300 leading-none">
+              40-46
             </div>
             <div className="mt-4 text-sm text-gray-500">
               normas tributárias publicadas <strong className="text-gray-800">por dia útil</strong> no Brasil
@@ -82,7 +82,7 @@ export default function ProblemSection() {
             </div>
 
             <div className="problem-reveal p-6 rounded-lg bg-gray-50 border border-gray-100">
-              <div className="font-[family-name:var(--font-mono)] text-3xl font-bold text-gray-900 mb-2">R$ 4,7 tri</div>
+              <div className="font-[family-name:var(--font-mono)] text-3xl font-bold text-gray-900 mb-2">R$ 5,6 tri</div>
               <div className="text-xs text-gray-400 uppercase tracking-wider mb-3">em litígios ativos</div>
               <p className="text-gray-500 text-sm leading-relaxed">
                 O contencioso tributário brasileiro supera R$ 4,7 trilhões. Parte desse valor pode estar no seu balanço.

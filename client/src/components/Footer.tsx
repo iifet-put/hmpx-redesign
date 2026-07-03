@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-5">
             <img
-              src="/manus-storage/Logo_HMPX_Padrao_Branca_1dc533dd.webp"
+              src="/images/Logo_HMPX_Padrao_Branca.webp"
               alt="HMPX - Inteligência Fiscal e Tributária"
               className="h-9 w-auto mb-6"
             />
@@ -30,13 +30,14 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               {[
-                { label: "O Problema", href: "#problema" },
+                { label: "O Cenário", href: "#cenario" },
                 { label: "Metodologia", href: "#metodologia" },
                 { label: "Especialidades", href: "#especialidades" },
                 { label: "Reforma Tributária", href: "#reforma" },
                 { label: "Resultados", href: "#resultados" },
                 { label: "Eventos & Conteúdos", href: "#conteudos" },
                 { label: "Contato", href: "#contato" },
+                { label: "Calculadora", href: "https://calculadora.hmpx.com.br/" }
               ].map((link) => (
                 <a
                   key={link.href}
