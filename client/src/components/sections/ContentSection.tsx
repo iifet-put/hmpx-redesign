@@ -35,12 +35,12 @@ export default function ContentSection() {
         gsap.from(el, {
           y: 40,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.5,
           delay: i * 0.06,
           ease: "power2.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 88%",
+            start: "top 95%",
             toggleActions: "play none none none",
           },
         });

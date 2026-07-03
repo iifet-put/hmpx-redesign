@@ -61,7 +61,7 @@ export default function Footer() {
               <p>Av. Braz Olaia Acosta, 2100</p>
               <p>Nova Aliança — Ribeirão Preto/SP</p>
             </div>
-            <div className="mt-6 p-3 rounded bg-white/[0.03] border border-white/5">
+            <div className="mt-6 p-3 rounded border border-white/5">
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                 <span className="font-[family-name:var(--font-mono)] text-[10px] text-white/30">Atendimento ativo</span>

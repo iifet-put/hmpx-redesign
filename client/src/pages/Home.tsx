@@ -16,7 +16,7 @@ import DiagnosticModal from "@/components/DiagnosticModal";
 export default function Home() {
   return (
     <DiagnosticModal>
-      <div className="min-h-screen bg-white text-[#1a1a1a] overflow-x-hidden">
+      <div className="min-h-screen bg-gray-100 text-[#1a1a1a] overflow-x-hidden">
         <Navbar />
         <HeroSection />
         <ProblemSection />

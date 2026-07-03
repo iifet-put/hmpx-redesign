@@ -37,12 +37,12 @@ export default function FAQSection() {
         gsap.from(el, {
           y: 30,
           opacity: 0,
-          duration: 0.7,
+          duration: 0.5,
           delay: i * 0.08,
           ease: "power2.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 88%",
+            start: "top 95%",
             toggleActions: "play none none none",
           },
         });
@@ -55,11 +55,11 @@ export default function FAQSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 md:py-32 overflow-hidden bg-white"
+      className="relative py-24 md:py-32 overflow-hidden"
     >
-      <div className="relative container max-w-4xl mx-auto px-4">
+      <div className="relative container max-w-4xl p-15 plr-50 mx-auto px-4 border border-gray-100 rounded-lg">
         <div className="faq-reveal flex items-center gap-3 mb-8">
-          <div className="w-8 h-px bg-[#BA1414]" />
+          <div className="w-8 h-px" />
           <span className="font-[family-name:var(--font-mono)] text-xs tracking-[0.2em] uppercase text-[#BA1414]">
             Perguntas Frequentes
           </span>
@@ -67,14 +67,14 @@ export default function FAQSection() {
 
         <h2 className="faq-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl leading-[1.1] text-gray-900 mb-12">
           Respostas diretas.{" "}
-          <span className="text-gray-300">Sem rodeios.</span>
+          <span className="text-[#BA1414]">Sem rodeios.</span>
         </h2>
 
         <div className="space-y-3">
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="faq-reveal border border-gray-100 rounded-lg overflow-hidden hover:border-gray-200 transition-colors duration-300 bg-gray-50/50"
+              className="faq-reveal border border-gray-100 rounded-lg overflow-hidden hover:border-gray-200 transition-colors duration-300 bg-white/50"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}

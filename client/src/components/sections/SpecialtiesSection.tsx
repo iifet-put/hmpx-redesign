@@ -45,13 +45,12 @@ export default function SpecialtiesSection() {
       gsap.utils.toArray<HTMLElement>(".spec-reveal").forEach((el, i) => {
         gsap.from(el, {
           y: 40,
-          opacity: 0,
-          duration: 0.7,
+          duration: 0.5,
           delay: i * 0.08,
           ease: "power2.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 88%",
+            start: "top 95%",
             toggleActions: "play none none none",
           },
         });
@@ -65,7 +64,7 @@ export default function SpecialtiesSection() {
     <section
       ref={sectionRef}
       id="especialidades"
-      className="relative py-28 md:py-36 overflow-hidden bg-white"
+      className="relative py-28 md:py-36 overflow-hidden"
     >
       {/* Background texture */}
       <div className="absolute inset-0 bg-grid opacity-30" />
@@ -83,11 +82,11 @@ export default function SpecialtiesSection() {
           <div className="lg:col-span-7">
             <h2 className="spec-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-gray-900">
               Cada área de atuação é uma{" "}
-              <span className="text-gray-300">frente de resultado.</span>
+              <span className="text-[#BA1414]">frente de resultado.</span>
             </h2>
           </div>
           <div className="lg:col-span-5 flex items-end">
-            <p className="spec-reveal text-gray-500 text-sm leading-relaxed">
+            <p className="spec-reveal text-[#BA1414] text-sm leading-relaxed">
               Não oferecemos serviços genéricos. Cada especialidade foi construída
               para gerar impacto financeiro direto e mensurável.
             </p>
@@ -98,7 +97,7 @@ export default function SpecialtiesSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {specialties.map((spec, i) => (
             <div
-              key={i}
+              key={spec.code}
               className="spec-reveal group relative p-6 rounded-lg bg-gray-50 border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all duration-500"
             >
               {/* Code badge */}

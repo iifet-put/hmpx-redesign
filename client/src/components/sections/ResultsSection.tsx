@@ -41,9 +41,11 @@ const results = [
     type: "Planejamento",
   },
 ];
+const value = 1.2;
 
 export default function ResultsSection() {
   const sectionRef = useRef<HTMLElement>(null);
+  const valueRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -51,7 +53,7 @@ export default function ResultsSection() {
         gsap.from(el, {
           y: 40,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.5,
           delay: i * 0.1,
           ease: "power2.out",
           scrollTrigger: {
@@ -60,6 +62,24 @@ export default function ResultsSection() {
             toggleActions: "play none none none",
           },
         });
+      });
+
+      const counter = { value: 0 };
+
+      gsap.to(counter, {
+        value,
+        duration: 0.8,
+        ease: "power2.out",
+        onUpdate: () => {
+          if (valueRef.current) {
+            valueRef.current.textContent = counter.value.toFixed(1).replace(".", ",");
+          }
+        },
+        scrollTrigger: {
+          trigger: valueRef.current,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
       });
     }, sectionRef);
 
@@ -70,7 +90,7 @@ export default function ResultsSection() {
     <section
       ref={sectionRef}
       id="resultados"
-      className="relative py-28 md:py-36 overflow-hidden bg-white"
+      className="relative py-28 md:py-36 overflow-hidden"
     >
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
 
@@ -86,7 +106,7 @@ export default function ResultsSection() {
           <div className="lg:col-span-7">
             <h2 className="results-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-gray-900 mb-6">
               Números que falam por si.{" "}
-              <span className="text-gray-300">Sem promessas. Sem asteriscos.</span>
+              <span className="text-[#BA1414]">Sem promessas. Sem asteriscos.</span>
             </h2>
           </div>
           <div className="lg:col-span-5 flex items-end">
@@ -101,7 +121,7 @@ export default function ResultsSection() {
         <div className="results-reveal mb-16 relative">
           <div className="flex items-baseline gap-4">
             <span className="font-[family-name:var(--font-mono)] text-6xl md:text-8xl lg:text-[8rem] font-bold text-gray-900 leading-none">
-              R$ 1,2
+              R$ <span ref={valueRef}>0,0</span>
             </span>
             <span className="font-[family-name:var(--font-mono)] text-3xl md:text-5xl font-bold text-[#BA1414]">
               bi
@@ -124,7 +144,7 @@ export default function ResultsSection() {
                 <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400 uppercase tracking-wider">
                   {result.sector}
                 </span>
-                <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400 px-2 py-0.5 rounded border border-gray-200 bg-white">
+                <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400 px-2 py-0.5 rounded border border-gray-200">
                   {result.type}
                 </span>
               </div>

@@ -13,7 +13,7 @@ export default function ProblemSection() {
         gsap.from(el, {
           y: 50,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.5,
           delay: i * 0.1,
           ease: "power2.out",
           scrollTrigger: {
@@ -32,7 +32,7 @@ export default function ProblemSection() {
     <section
       ref={sectionRef}
       id="cenario"
-      className="relative py-28 md:py-36 overflow-hidden bg-white"
+      className="relative py-28 md:py-36 overflow-hidden"
     >
       {/* Background data fragments */}
       <div className="absolute top-20 right-10 font-[family-name:var(--font-mono)] text-[10px] text-gray-100 leading-relaxed hidden lg:block">
@@ -55,14 +55,14 @@ export default function ProblemSection() {
         {/* Main headline */}
         <h2 className="problem-reveal font-[family-name:var(--font-display)] font-bold text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] leading-[1.05] text-gray-900 max-w-4xl mb-16">
           O sistema tributário brasileiro foi projetado para ser{" "}
-          <span className="text-gray-300">incompreensível.</span>
+          <span className="text-[#BA1414]">incompreensível.</span>
         </h2>
 
         {/* Asymmetric layout: large stat left + cards right */}
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 mb-20">
           {/* Left - Big number */}
           <div className="problem-reveal lg:col-span-4 flex flex-col justify-center">
-            <div className="font-[family-name:var(--font-mono)] text-7xl md:text-8xl lg:text-8xl font-bold text-gray-300 leading-none">
+            <div className="font-[family-name:var(--font-mono)] text-7xl md:text-8xl lg:text-8xl font-bold text-[#BA1414] leading-none">
               40-46
             </div>
             <div className="mt-4 text-sm text-gray-500">

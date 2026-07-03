@@ -13,7 +13,7 @@ export default function ReformSection() {
         gsap.from(el, {
           y: 40,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.5,
           delay: i * 0.1,
           ease: "power2.out",
           scrollTrigger: {
@@ -48,7 +48,7 @@ export default function ReformSection() {
         {/* Headline */}
         <h2 className="reform-reveal font-[family-name:var(--font-display)] font-bold text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.05] text-gray-900 max-w-4xl mb-8">
           A maior mudança tributária em 40 anos{" "}
-          <span className="text-gray-300">já começou.</span>
+          <span className="text-[#BA1414]">já começou.</span>
         </h2>
 
         <p className="reform-reveal text-lg text-gray-500 max-w-2xl mb-16">
@@ -67,7 +67,7 @@ export default function ReformSection() {
           ].map((item, i) => (
             <div
               key={i}
-              className="relative p-5 rounded-lg bg-white border border-gray-100 group hover:border-gray-200 hover:shadow-sm transition-all duration-300"
+              className="relative p-5 rounded-lg border border-gray-100 group hover:border-gray-200 hover:shadow-sm transition-all duration-300"
             >
               <div className="font-[family-name:var(--font-mono)] text-lg font-bold text-gray-900 mb-2">
                 {item.year}

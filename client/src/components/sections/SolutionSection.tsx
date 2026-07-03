@@ -13,8 +13,8 @@ export default function SolutionSection() {
         gsap.from(el, {
           y: 40,
           opacity: 0,
-          duration: 0.8,
-          delay: i * 0.08,
+          duration: 0.5,
+          delay: i * 0.05,
           ease: "power2.out",
           scrollTrigger: {
             trigger: el,
@@ -31,7 +31,7 @@ export default function SolutionSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-28 md:py-36 overflow-hidden bg-white"
+      className="relative py-28 md:py-36 overflow-hidden"
     >
       {/* Red Line - vertical connector */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-[#BA1414]/20 to-transparent" />
@@ -50,7 +50,7 @@ export default function SolutionSection() {
             <h2 className="solution-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-gray-900 mb-8">
               Não somos uma consultoria.
               <br />
-              <span className="text-gray-300">Somos um sistema de inteligência.</span>
+              <span className="text-[#BA1414]">Somos um sistema de inteligência.</span>
             </h2>
 
             <p className="solution-reveal text-lg text-gray-500 leading-relaxed mb-10 max-w-xl">
@@ -90,7 +90,7 @@ export default function SolutionSection() {
               </div>
 
               {/* Floating stat module */}
-              <div className="absolute -bottom-4 -left-4 p-4 bg-white shadow-lg border border-gray-100 rounded-lg">
+              <div className="absolute -bottom-4 -left-4 p-4 shadow-lg border border-gray-100 rounded-lg">
                 <div className="flex items-center gap-2 mb-1">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#BA1414]" />
                   <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400">Economia identificada</span>
@@ -101,7 +101,7 @@ export default function SolutionSection() {
               </div>
 
               {/* System status indicator */}
-              <div className="absolute -top-3 -right-3 p-3 bg-white shadow-lg border border-gray-100 rounded-lg">
+              <div className="absolute -top-3 -right-3 p-3 shadow-lg border border-gray-100 rounded-lg">
                 <div className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                   <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400">Online</span>

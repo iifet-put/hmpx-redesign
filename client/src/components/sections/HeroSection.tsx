@@ -13,11 +13,11 @@ export default function HeroSection() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-      tl.from(headlineRef.current, { y: 60, opacity: 0, duration: 1, delay: 0.3 })
-        .from(subRef.current, { y: 40, opacity: 0, duration: 0.8 }, "-=0.5")
-        .from(ctaRef.current, { y: 30, opacity: 0, duration: 0.7 }, "-=0.4")
-        .from(statRef.current, { y: 30, opacity: 0, duration: 0.7 }, "-=0.3")
-        .from(dataRef.current, { x: 30, opacity: 0, duration: 0.8 }, "-=0.6");
+      tl.from(headlineRef.current, { y: 60, opacity: 0, duration: 0.7, delay: 0.3 })
+        .from(subRef.current, { y: 40, opacity: 0, duration: 0.5 }, "-=0.5")
+        .from(ctaRef.current, { y: 30, opacity: 0, duration: 0.5 }, "-=0.4")
+        .from(statRef.current, { y: 30, opacity: 0, duration: 0.5 }, "-=0.3")
+        .from(dataRef.current, { x: 30, opacity: 0, duration: 0.5 }, "-=0.6");
     }, sectionRef);
 
     return () => ctx.revert();
@@ -26,11 +26,11 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen flex items-center overflow-hidden bg-white"
+      className="relative min-h-screen flex items-center overflow-hidden"
     >
       {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-grid opacity-40" />
-      <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-gray-50/50" />
+      <div className="absolute inset-0" />
+      <div className="absolute inset-0" />
 
       {/* Red Line - vertical accent */}
       <div className="absolute left-8 md:left-16 top-1/4 bottom-1/4 w-px bg-gradient-to-b from-transparent via-[#BA1414]/20 to-transparent" />
@@ -53,7 +53,7 @@ export default function HeroSection() {
             >
               Sua empresa perde dinheiro todos os dias.
               <br />
-              <span className="text-gray-300">Você só não sabe quanto.</span>
+              <span className="text-[#BA1414]">Você só não sabe quanto.</span>
             </h1>
 
             <p
@@ -228,7 +228,7 @@ export default function HeroSection() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="text-[10px] text-gray-300 tracking-[0.3em] uppercase font-[family-name:var(--font-mono)]">Scroll</span>
+        <span className="text-[10px] text-[#BA1414] tracking-[0.3em] uppercase font-[family-name:var(--font-mono)]">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-gray-300 to-transparent" />
       </div>
     </section>

@@ -61,7 +61,7 @@ export default function CTASection({ embedded = false }: CTASectionProps) {
         gsap.from(el, {
           y: 40,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.5,
           delay: i * 0.1,
           ease: "power2.out",
           scrollTrigger: {
@@ -155,7 +155,7 @@ export default function CTASection({ embedded = false }: CTASectionProps) {
           <div className={cn("lg:col-span-7", embedded && "lg:mt-5")}>
             <div
               className={cn(
-                "cta-reveal rounded-lg bg-white border border-gray-100 shadow-sm",
+                "cta-reveal rounded-lg bg-white/90 border border-gray-100 shadow-sm",
                 embedded ? "p-5 md:p-6" : "p-6 md:p-8"
               )}
             >

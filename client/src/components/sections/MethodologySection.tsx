@@ -44,12 +44,12 @@ export default function MethodologySection() {
         gsap.from(el, {
           y: 40,
           opacity: 0,
-          duration: 0.8,
-          delay: i * 0.1,
+          duration: 0.5,
+          delay: i * 0.07,
           ease: "power2.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 85%",
+            start: "top 95%",
             toggleActions: "play none none none",
           },
         });
@@ -63,7 +63,7 @@ export default function MethodologySection() {
     <section
       ref={sectionRef}
       id="metodologia"
-      className="relative py-28 md:py-36 overflow-hidden bg-gray-50/50"
+      className="relative py-28 md:py-36 overflow-hidden"
     >
       {/* Red Line - horizontal connector */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#BA1414]/15 to-transparent" />
@@ -85,7 +85,7 @@ export default function MethodologySection() {
           <div className="lg:col-span-7">
             <h2 className="method-reveal font-[family-name:var(--font-display)] font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-gray-900 mb-6">
               Precisão que se mede em{" "}
-              <span className="text-gray-300">reais recuperados.</span>
+              <span className="text-[#BA1414]">reais recuperados.</span>
             </h2>
             <p className="method-reveal text-lg text-gray-500 max-w-xl">
               Cada etapa do nosso processo foi desenhada para eliminar incertezas
@@ -93,7 +93,7 @@ export default function MethodologySection() {
             </p>
           </div>
           <div className="lg:col-span-5 flex items-end justify-end">
-            <div className="method-reveal font-[family-name:var(--font-mono)] text-[10px] text-gray-300 text-right leading-loose hidden lg:block">
+            <div className="method-reveal font-[family-name:var(--font-mono)] text-[10px] text-[#BA1414] text-right leading-loose hidden lg:block">
               <div>input → análise → modelagem</div>
               <div>modelagem → validação → execução</div>
               <div>execução → monitoramento → loop</div>
@@ -106,11 +106,11 @@ export default function MethodologySection() {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="method-reveal group relative p-6 md:p-8 rounded-lg bg-white border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all duration-500"
+              className="bg-white/50 method-reveal group relative p-6 md:p-8 rounded-lg border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all duration-500"
             >
               {/* Step number */}
               <div className="flex items-center justify-between mb-5">
-                <span className="font-[family-name:var(--font-mono)] text-xs text-gray-300">
+                <span className="font-[family-name:var(--font-mono)] text-xs text-[#BA1414]">
                   {step.number}
                 </span>
                 <div className="font-[family-name:var(--font-mono)] text-right">
