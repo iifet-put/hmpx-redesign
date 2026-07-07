@@ -70,7 +70,7 @@ export default function SolutionSection() {
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4 group">
                   <span className="font-[family-name:var(--font-mono)] text-[10px] text-gray-400 rounded border border-gray-100 shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BA1414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BA1414" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                   </span>
                   <span className="text-gray-600 text-sm mt-0.5">{item.label}</span>
                 </div>

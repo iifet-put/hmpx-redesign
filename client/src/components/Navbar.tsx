@@ -6,9 +6,9 @@ const navLinks = [
   { label: "Metodologia", href: "#metodologia" },
   { label: "Especialidades", href: "#especialidades" },
   { label: "Reforma", href: "#reforma" },
+  { label: "Calculadora", href: "#calculadora" },
   { label: "Resultados", href: "#resultados" },
   { label: "Conteúdos", href: "#conteudos" },
-  { label: "Calculadora", href: "https://calculadora.hmpx.com.br/" },
 ];
 
 export default function Navbar() {

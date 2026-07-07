@@ -45,7 +45,7 @@ export const DEMO_POSTS: DemoPost[] = [
     meta: "Como ficará a Reforma Tributária na Tecnologia?",
     width: 2,
     image: "/images/Evento-TrackHub.webp",
-    url: "https://www.instagram.com/reel/DZvtckgpnmI/?igsh=MTE4aWMxbHhrcGhwZA=="
+    url: "https://www.instagram.com/reel/DWpD8hZCeYF/?igsh=MWplYWI2cWg3M3d2eg%3D%3D"
   },
   {
     category: "Evento",
@@ -53,6 +53,6 @@ export const DEMO_POSTS: DemoPost[] = [
     meta: "Quebrando questionamentos e medos da nova tributação no Brasil",
     width: 2,
     image: "/images/Evento-Deputado-Bragança.webp",
-    url: "https://www.instagram.com/reel/DWpD8hZCeYF/?igsh=MWplYWI2cWg3M3d2eg=="
+    url: "https://www.instagram.com/reel/DZvtckgpnmI/?igsh=MTE4aWMxbHhrcGhwZA%3D%3D"
   }
 ];

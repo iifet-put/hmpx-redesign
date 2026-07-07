@@ -74,13 +74,21 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-white/25 font-[family-name:var(--font-mono)]">
-            © 2024 HMPX — Inteligência Fiscal e Tributária. Todos os direitos reservados.
+            © 2026 HMPX — Inteligência Fiscal e Tributária. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-[11px] text-white/25 hover:text-white/50 transition-colors">
+            <a
+              href="/documents/politica_de_privacidade.pdf"
+              target="_blank"
+              className="text-[11px] text-white/25 hover:text-white/50 transition-colors"
+            >
               Política de Privacidade
             </a>
-            <a href="#" className="text-[11px] text-white/25 hover:text-white/50 transition-colors">
+            <a
+              href="/documents/termos_de_uso.pdf"
+              target="_blank"
+              className="text-[11px] text-white/25 hover:text-white/50 transition-colors"
+            >
               Termos de Uso
             </a>
           </div>

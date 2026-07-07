@@ -12,6 +12,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/Footer";
 import DiagnosticModal from "@/components/DiagnosticModal";
+import CalculatorSection from "@/components/sections/CalculatorSection";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <MethodologySection />
         <SpecialtiesSection />
         <ReformSection />
+        <CalculatorSection />
         <ResultsSection />
         {/* <TrustSection /> */}
         <ContentSection />
